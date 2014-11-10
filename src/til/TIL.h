@@ -350,7 +350,7 @@ public:
   void setBlock(BasicBlock *B) { Block = B; }
 
   /// Set the stack ID for this instruction.
-  void setStackID(unsigned D) { StackID = D; }
+  unsigned setStackID(unsigned D) { return StackID = D; }
 
   /// Sets the ValueType for this instruction.
   void setValueType(ValueType Vt) { ValType = Vt; }
