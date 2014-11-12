@@ -354,6 +354,7 @@ MAPTYPE(V::RMap, VarDecl) VarDecl::traverse(V &Vs) {
       return Vs.reduceVarDeclLetrec(Nvd, D);
     }
   }
+  return nullptr;
 }
 
 template <class V>
